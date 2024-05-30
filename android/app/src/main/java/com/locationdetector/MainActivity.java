@@ -3,6 +3,7 @@ package com.locationdetector;
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.ReactRootView;
+import com.swmansion.rnscreens.RNScreensPackage; // Add this line
 
 public class MainActivity extends ReactActivity {
 
