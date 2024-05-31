@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {View, Text, StyleSheet, TextInput,TouchableOpacity} from 'react-native';
 import {db} from '../../config';
 import {ref, set} from 'firebase/database';
+import colors from '../utils/Colors';
 
 const LoginPage = ({navigation}) => {
   const [name, setName] = useState('');
@@ -18,7 +19,7 @@ const LoginPage = ({navigation}) => {
   };
   return (
     <View style={styles.container}>
-      <Text>Insert Data</Text>
+      <Text style={{fontSize: 26}}>Login</Text>
       <TextInput
         placeholder="Write Your Name"
         value={name}
@@ -33,7 +34,7 @@ const LoginPage = ({navigation}) => {
         style={styles.input}
       />
       <TouchableOpacity onPress={LoginPage} style={styles.button}>
-        <Text>Login</Text>
+        <Text style={{color: colors.fontPrimary}}>Login</Text>
       </TouchableOpacity>
     </View>
   );
@@ -52,10 +53,11 @@ const styles = StyleSheet.create({
     padding: 8,
     margin: 10,
     width: 200,
+    borderRadius:7,
   },
   button: {
     alignItems: 'center',
-    backgroundColor: '#DDDDDD',
+    backgroundColor: colors.primary,
     padding: 10,
     width: 200,
     borderRadius:7,
