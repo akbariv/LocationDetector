@@ -1,7 +1,7 @@
 import React from 'react'
 import { createStackNavigator } from '@react-navigation/stack'
 import LoginPage from '../screen/LoginPage'
-import MapScreen from '../screen/MapScreen'
+import MapScreen from '../screen/MapComponent/MapScreen'
 const Stack = createStackNavigator()
 
 const Routes = () => {
