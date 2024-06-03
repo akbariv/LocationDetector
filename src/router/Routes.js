@@ -7,8 +7,8 @@ const Stack = createStackNavigator()
 const Routes = () => {
   return (
    <Stack.Navigator screenOptions={{headerShown: false}} initialRouteName='LoginPage'>
-    <Stack.Screen name="LoginPage" component={LoginPage}/>
-    <Stack.Screen name="MapScreen" component={MapScreen}/>
+    <Stack.Screen name="LoginPage" component={LoginPage} options={{headerShown: false}}/>
+    <Stack.Screen name="MapScreen" component={MapScreen} options={{headerShown: false}}/>
    </Stack.Navigator>
   )
 }
